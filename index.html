@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="burger" data-bind="click: burgerIcon">&#9776;</div>
+        </nav>
+    </header>
+    <div id="container">
+
+        <aside id="places-list">
+
+            <input id="filter" type="text" placeholder="Enter Location From List" data-bind="textInput: searchValue ,valueUpdate: 'afterkeydown'">
+
+            <ul data-bind="foreach: filterList">
+                <li data-bind="text: title, click: clickAble"></li>
+            </ul>
+        </aside>
+
+
+        <!--Section that my map will show in we give it id /map/ to select it-->
+        <main id="map"></main>
+
+    </div>
+
+
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/knockout-3.4.2.js"></script>
+    <script src="js/list-data.js"></script>
+    <script src="js/list-view.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPZjhRY2jUckGQNh0f_tc7jo2dw18GRz4&libraries=geometry,drawing&v=3&callback=initMap" onerror="errorHandlingMap()">
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+    html,
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav {
+    background-color: #eee
+}
+
+#burger {
+    text-align: left;
+    font-size: 2em;
+    margin-left: 10px
+}
+
+#container {
+    display: flex;
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+    flex: 10;
+}
+
+#pano {
+    width: 200px;
+    height: 200px;
+}
+
+#places-list {
+    background-color: #eee;
+    height: 100%;
+    flex: 2;
+    display: none;
+}
+
+ul,
+input {
+    padding: 10px;
+}
+
+input {
+    margin-left: 10px;
+}
+
+@media (min-width: 300px) {
+    #places-list {
+        display: none;
+    }
+    @media (min-width: 800px) {
+        #places-list {
+            display: block;
+        }
+    }

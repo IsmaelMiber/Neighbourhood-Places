@@ -1,3 +1,7 @@
+# Preview
+Here you can see the project:
+https://ismaelmiber.github.io/Neighbourhood-Places/
+
 # Instruction
 1- open 'index.html'.
 2- Enter Any Name Of place in the list.
